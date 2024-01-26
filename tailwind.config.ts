@@ -9,6 +9,7 @@ const colors = {
   'gray-sixth': '#202024',
   'gray-seventh': '#121214',
   'red-primary': '#F75A68',
+  'black-primary': '#121214',
 };
 
 /** @type {import('tailwindcss').Config} */
