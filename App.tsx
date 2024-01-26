@@ -1,5 +1,7 @@
 import { View } from 'react-native';
 
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 import { StatusBar } from 'expo-status-bar';
 
 import { useFonts, Inter_400Regular, Inter_700Bold } from '@expo-google-fonts/inter';
@@ -14,10 +16,10 @@ export default function App() {
   if (!fontLoaded) return <Loading />;
 
   return (
-    <View className="flex-1 justify-center items-center">
-      <StatusBar style="light" backgroundColor="transparent" translucent />
+    <SafeAreaView className="flex-1 bg-gray-seventh">
+      <StatusBar backgroundColor="transparent" style="light" translucent />
 
       <SignIn />
-    </View>
+    </SafeAreaView>
   );
 }
