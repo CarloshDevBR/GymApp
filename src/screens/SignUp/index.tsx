@@ -6,15 +6,15 @@ import LogoSvg from '@assets/logo.svg';
 
 import { Button, TextField } from '@components/index';
 
-import { useNavigation } from '@react-navigation/native';
-
 import { AuthNavigatorRoutesProps } from '@routes/auth.routes';
 
-export function SignIn() {
+import { useNavigation } from '@react-navigation/native';
+
+export function SignUp() {
   const navigate = useNavigation<AuthNavigatorRoutesProps>();
 
-  const handleNavigateSignUp = () => {
-    navigate.navigate('signUp');
+  const handleNavigateSignIn = () => {
+    navigate.navigate('signIn');
   };
 
   return (
@@ -29,20 +29,20 @@ export function SignIn() {
         </View>
 
         <View className="flex-1 justify-end mx-[40px] mb-16">
-          <Text className="text-gray-primary text-xl text-center font-semibold mb-4">Acesse sua conta</Text>
+          <Text className="text-gray-primary text-xl text-center font-semibold mb-4">Crie sua conta</Text>
+
+          <TextField title="Nome" keyboardType="email-address" />
 
           <TextField title="E-mail" keyboardType="email-address" />
 
           <TextField title="Senha" secureTextEntry />
 
+          <TextField title="Confirmar a Senha" secureTextEntry />
+
           <Button title="Acessar" />
         </View>
 
-        <View className="mx-[40px] mb-4">
-          <Text className="text-gray-primary text-center mb-4">Ainda não tem acesso?</Text>
-
-          <Button title="Criar conta" type="outlined" onPress={handleNavigateSignUp} />
-        </View>
+        <Button className="mx-[40px] mb-4" title="Voltar para o login" type="outlined" onPress={handleNavigateSignIn} />
       </View>
     </ScrollView>
   );
