@@ -12,7 +12,7 @@ export const Button = ({ title, className, type = 'contained', ...rest }: Button
        ${type === 'contained' ? 'bg-green-primary' : 'border-2 border-green-primary'}`}
       {...rest}
     >
-      <Text className="text-white font-bold">{title}</Text>
+      <Text className={`font-bold ${type === 'contained' ? 'text-white' : 'text-green-secondary'}`}>{title}</Text>
     </TouchableOpacity>
   );
 };
