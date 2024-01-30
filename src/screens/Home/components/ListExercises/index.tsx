@@ -20,7 +20,7 @@ export const ListExercises = ({ data }: ListExercisesProps) => {
       <FlatList
         data={data}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <Exercise title={item.name} description={item.description} />}
+        renderItem={({ item }) => <Exercise data={item} />}
         showsVerticalScrollIndicator={false}
       />
     </View>
