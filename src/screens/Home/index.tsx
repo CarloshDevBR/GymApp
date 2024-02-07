@@ -6,7 +6,7 @@ import { ListExercises } from './components/ListExercises';
 
 import { EXERCISES, GROUPS } from 'src/constants';
 
-export function Home() {
+export default function Home() {
   return (
     <View className="flex-1 bg-black-primary">
       <Header />

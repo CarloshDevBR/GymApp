@@ -10,7 +10,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import { AuthNavigatorRoutesProps } from '@routes/auth.routes';
 
-export function SignIn() {
+export default function SignIn() {
   const navigate = useNavigation<AuthNavigatorRoutesProps>();
 
   const handleNavigateSignUp = () => {

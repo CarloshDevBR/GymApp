@@ -1,14 +1,14 @@
-import { Image, Text, TouchableOpacity, View } from 'react-native';
-
-import Avatar from '@assets/userPhotoDefault.png';
+import { Text, TouchableOpacity, View } from 'react-native';
 
 import { MaterialIcons } from '@expo/vector-icons';
+
+import { Avatar } from '@components/index';
 
 export const Header = () => {
   return (
     <View className="h-[100px] flex-row items-center bg-gray-sixth">
       <View className="flex-1 flex-row items-center ml-8">
-        <Image source={Avatar} defaultSource={Avatar} alt="avatar" />
+        <Avatar />
 
         <View className="ml-4">
           <Text className="text-white">Olá</Text>
