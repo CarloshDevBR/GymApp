@@ -1,6 +1,8 @@
-import { Home } from '@screens/Home';
-import { SignIn } from '@screens/SignIn';
-import { SignUp } from '@screens/SignUp';
+import SignIn from '@screens/SignIn';
+import SignUp from '@screens/SignUp';
+import Home from '@screens/Home';
+import Historic from '@screens/Historic';
+import Profile from '@screens/Profile';
 
 import HomeSvg from '@assets/home.svg';
 import HistorySvg from '@assets/history.svg';
@@ -25,12 +27,12 @@ export const PRIVATE_ROUTES = [
   },
   {
     name: 'history',
-    page: SignUp,
+    page: Historic,
     icon: (color: string) => <HistorySvg height={25} width={25} fill={color} />,
   },
   {
     name: 'profile',
-    page: SignUp,
+    page: Profile,
     icon: (color: string) => <ProfileSvg height={25} width={25} fill={color} />,
   },
 ];
