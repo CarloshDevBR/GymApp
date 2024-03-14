@@ -1,4 +1,4 @@
-import { PUBLIC_ROUTES } from './routes';
+import { PUBLIC_ROUTES } from '../constants/routes';
 
 import { NativeStackNavigationProp, createNativeStackNavigator } from '@react-navigation/native-stack';
 

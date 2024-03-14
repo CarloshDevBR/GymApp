@@ -1,6 +1,6 @@
 import { createBottomTabNavigator, BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
 
-import { PRIVATE_ROUTES } from './routes';
+import { PRIVATE_ROUTES } from '../constants/routes';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
